@@ -3,17 +3,23 @@
 }
 .top-page-header {
   width: 100vw;
-  padding: 1vh 8vw;
+  padding: 2vh 15vw;
   display: flex;
-  background-image: url('../sankaku.png'), url('../potya.png');
-  background-size: 7%;
+  flex-direction: column;
+  right: 0;
+  background-image: url('sankaku.png'), url('potya.png');
+  background-size: 6%;
   background-position: left top, right top;
   background-repeat: no-repeat;
 }
 .furima-icon {
-  width: 14vw;
+  width: 10vw;
+  margin-right: 5vw;
 }
-
+.search-bar-contents {
+  display: flex;
+  align-items: center;
+}
 .nav {
   font-size: 18px;
   display: flex;
@@ -35,8 +41,8 @@
   margin: 2em 0;
   color: #296ccf;
   background: #d7ecff;
-  border-bottom: solid 4px #aac5de;
-  border-radius: 7px;
+  border-bottom: solid 6px #aac5de;
+  border-radius: 9px;
 }
 .logout {
   text-decoration: none;
@@ -45,8 +51,8 @@
   margin: 2em 0;
   color: #296ccf;
   background: #d7ecff;
-  border-bottom: solid 4px #aac5de;
-  border-radius: 7px;
+  border-bottom: solid 6px #aac5de;
+  border-radius: 9px;
 }
 .login {
   text-decoration: none;
@@ -55,8 +61,8 @@
   margin: 2em 0;
   color: #296ccf;
   background: #d7ecff;
-  border-bottom: solid 4px #aac5de;
-  border-radius: 7px;
+  border-bottom: solid 6px #aac5de;
+  border-radius: 9px;
 }
 .sign-up {
   text-decoration: none;
@@ -65,6 +71,6 @@
   margin: 2em 0;
   color: #296ccf;
   background: #d7ecff;
-  border-bottom: solid 4px #aac5de;
-  border-radius:7px;
+  border-bottom: solid 6px #aac5de;
+  border-radius: 9px;
 }
