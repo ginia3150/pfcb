@@ -14,7 +14,7 @@
 ### Association
 
 - has_many :wants
-- has_one :total
+- has_many :total
 
 ## wantsテーブル
 

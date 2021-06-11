@@ -1,8 +1,8 @@
 <%# CSS・・・assets/stylesheets/shared/header.css %>
-<header class='top-page-header'>
+<header>
   <div class='nav'>
     <div class='search-bar-contents'>
-      <%= link_to image_tag("logo_transparent.png", class:"furima-icon"), "/" %>
+      <%= link_to image_tag("logo_transparent.png", class:"furima-icon"), root_path %>
     </div>
     <ul class='lists-right'>
       <% if user_signed_in? %>

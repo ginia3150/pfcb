@@ -5,15 +5,10 @@
   width: 100vw;
   padding: 1vh 8vw;
   display: flex;
-  background-image: url('../sankaku.png'), url('../potya.png');
-  background-size: 7%;
-  background-position: left top, right top;
-  background-repeat: no-repeat;
 }
 .furima-icon {
   width: 14vw;
 }
-
 .nav {
   font-size: 18px;
   display: flex;
