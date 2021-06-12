@@ -4,7 +4,7 @@
 
   </header>
   <div class="items-sell-main">
-    <h2 class="items-sell-title">商品の情報を入力</h2>
+    <h2 class="items-sell-title">食材の情報を入力</h2>
     <%= form_with(model: @total, local: true) do |f| %>
 
     <%= render 'devise/shared/error_messages', model: f.object %>
@@ -14,7 +14,8 @@
         <div class="weight-bold-text">
           食品選択
         </div>
-        <%#<%= f.collection_select(:hoge_id, hoge.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+          <%= render 'totals/checkboxes' %>
+        <%= f.collection_select(:major_id, Major.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
       </div>
       <%# /食品一覧 %>
 

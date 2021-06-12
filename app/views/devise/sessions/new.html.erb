@@ -1,10 +1,23 @@
-<div class='account-page' id='account-page'>
-  <div class='account-page__inner clearfix'>
-    <div class='account-page__inner--left account-page__header'>
-      <h2>Log in</h2>
-      <h5>登録しているユーザーでログイン</h5>
-      
-    </div>
+<section class="hero">
+  <section class="hero">
+  <form class="login-form">
+    <p class="login-text">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-lock fa-stack-1x"></i>
+    </span>
+    </p>
+  <input type="email" class="login-username" autofocus="true" required="true" placeholder="Email" />
+  <input type="password" class="login-password" required="true" placeholder="Password" />
+  <input type="submit" name="Login" value="Login" class="login-submit" />
+  </form>
+  <a href="#" class="login-forgot-pass">forgot password?</a>
+  <div class="underlay-photo"></div>
+  <div class="underlay-black"></div> 
+</section>
+
+
+
     <div class='account-page__inner--right user-form'>
       <%= form_with model: @user, url: user_session_path, local: true do |f|%>
       <%= render 'devise/shared/error_messages', model: f.object %>
@@ -32,4 +45,5 @@
       <% end %>
     </div>
   </div>
-</div>
+  </div>
+</section>
